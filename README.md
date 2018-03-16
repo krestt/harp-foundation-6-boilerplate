@@ -5,7 +5,7 @@
 
 <p>Harp with Foundation.js Boilerplate — Nice boilerplate with Grid-XY system</p>
 
-<table>
+<table width="100%">
 	<tr>
 		<td><img src="https://www.netgains.org/wp-content/uploads/2014/01/node_js.png" width="220" title="Node JS Logo"></td>
 		<td><img src="http://sintaxi.com/assets/img/harp-banner.svg" width="256" title="Harp JS Logo"></td>
