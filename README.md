@@ -1,9 +1,7 @@
 # harp-foundation-js-boilerplate
 
 
-
-
-<p>Harp with Foundation.js Boilerplate — Nice boilerplate with Grid-XY system</p>
+#### Harp with Foundation.js Boilerplate — Nice boilerplate with Grid-XY system
 
 <table width="100%">
 	<tr>
