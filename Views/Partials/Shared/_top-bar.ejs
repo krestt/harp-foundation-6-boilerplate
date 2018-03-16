@@ -1,0 +1,40 @@
+
+
+          <section id="top-bar" class="top-bar-container">
+            <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+              <div class="top-bar grid-x expanded padding-0">
+
+              	<div class="cell shrink padding-0">
+          			<button id="fake-burger-btn" class="hamburger hamburger--squeeze margin-0" data-toggle="burger-btn modal-menu" data-toggler=".is-active" type="button">
+          			</button>  		   
+              	</div>
+
+              	<div id="main-logo-container" class="cell auto text-center">
+                  <a href="index.html">
+                    <img src="./css/images/febs_logo.png" width="350px" class="show-for-medium">
+              		  <img src="./css/images/febs_logo-small.png" width="150px" class="hide-for-medium">
+                  </a>
+              	</div>
+
+              	<div class="cell shrink text-right padding-0 show-for-medium">
+              		<button id="search-btn" href="#!" type="button" class="button margin-0" data-toggle="modal-search" aria-controls="modal-search" aria-haspopup="true" tabindex="0">
+              		</button>
+              	</div>
+
+              </div>
+            </div>
+          </section>
+
+
+          <button id="burger-btn" class="hamburger hamburger--squeeze margin-0" data-toggle="burger-btn modal-menu" data-toggler=".is-active" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span><br>
+            <span class="text">MENU</span>
+          </button>       
+
+
+
+<%- partial("../Modals/_modal-search") %>
+
+<%- partial("../Modals/_modal-menu") %>

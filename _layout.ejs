@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta charset="UTF-8">
+    <title>LEADSHIP</title>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="css/vendor/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor/hamburgers.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor/animate.min.css">
+
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="css/vendor/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor/slick-theme.css">  
+    <!-- slick -->
+
+    <!-- owl-carousel -->
+    <link rel="stylesheet" type="text/css" href="css/vendor/owl.carousel.min.css">    
+    <link rel="stylesheet" type="text/css" href="css/vendor/owl.theme.default.min.css">   
+    <!-- owl-carousel -->
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- styles -->
+    
+    <script src="scripts/vendor/jquery.js"></script>
+
+  </head>
+  <body>
+
+
+
+   	 <%- partial("/Views/Partials/Shared/_top-bar") %>
+
+
+    	  <%- yield %>
+
+
+     <%- partial("/Views/Partials/Shared/_footer") %>
+
+
+
+    <!-- scripts -->
+    <script src="scripts/vendor/foundation.min.js"></script>
+    <script src="scripts/vendor/slick.min.js"></script>
+    <script src="scripts/vendor/owl.carousel.js"></script>
+    <script src="scripts/vendor/scrollreveal.min.js"></script>
+    <script src="scripts/vendor/jquery.waypoints.min.js"></script>
+    <script src="scripts/vendor/paroller.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- scripts -->
+  </body>
+</html>

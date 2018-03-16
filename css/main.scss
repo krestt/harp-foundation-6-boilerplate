@@ -1,0 +1,2432 @@
+// Configuration
+@import 'config';
+
+
+
+
+
+
+
+/*--------------------------------------------------
+-- GLOBAL
+--------------------------------------------------*/
+*{
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+}
+a{
+	color: unset;
+}
+/*--------------------------------------------------
+-- GLOBAL
+--------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------
+-- Foundation Overwrite
+-----------------------------------------------------*/
+ul{
+	list-style: none;
+	margin-left: unset;
+	margin-bottom: 3rem;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: "univia-pro";
+	font-size: 2rem;
+}
+body{
+	background-color: #edeff1;
+}
+.menu .active > a{
+	background: unset;
+}
+.accordion-menu .is-accordion-submenu a{
+	padding: unset;
+}
+
+.sticky.is-anchored{
+    position: fixed;
+    z-index: 5;
+    width: 100%;	
+}
+.stuck {
+  position:fixed !important;
+}
+/*----------------------------------------------------
+-- Foundation Overwrite
+-----------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------
+-- FONTS
+----------------------------------------------------*/
+@font-face {
+	font-family: "merriweather-regular";
+	src: url("./vendor/fonts/Merriweather-Regular.otf");
+}
+@font-face {
+	font-family: "merriweather-light";
+	src: url("./vendor/fonts/Merriweather-Light.otf");
+}
+@font-face {
+	font-family: "merriweather-bold";
+	src: url("./vendor/fonts/Merriweather-Bold.otf");
+}
+@font-face {
+	font-family: "opensans-regular";
+	src: url("./vendor/fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+	font-family: "opensans-semibold";
+	src: url("./vendor/fonts/OpenSans-SemiBold.ttf");
+}
+@font-face {
+	font-family: "opensans-bold";
+	src: url("./vendor/fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+	font-family: "opensans-extra-bold";
+	src: url("./vendor/fonts/OpenSans-ExtraBold.ttf");
+}
+/*---------------------------------------------------
+-- FONTS
+----------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------
+-- TEXTS
+-----------------------------------------------------*/
+
+.dark-blue-text{
+	color: #2a385b;
+}
+
+.white-text{
+	color: #FFFFFF;
+}
+
+.yellow-text{
+	color: #ffde17;
+}
+
+.light-blue{
+	color: #87b5dc;
+}
+
+.font-mirrweather-reg{
+	font-family: "merriweather-regular";
+}
+.font-opensans-reg{
+	font-family: "opensans-regular";
+}
+/*-----------------------------------------------------
+-- TEXTS
+-----------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------
+-- BUTTONS
+-----------------------------------------------------*/
+.button.hollow{
+	color: #FFF;
+	border-color: #FFF;
+	border-radius: 0;
+	border-width: 2px;
+	font-family: "opensans-bold";
+	font-size: 0.7em;
+	letter-spacing: 1px;
+
+	&:hover{
+		color: #6bbcff;
+		border-color: #6bbcff;
+	}
+
+	&.gold{
+		border-color: #ffde17;
+		color: #ffde17;
+
+		&:hover{
+			color: #6bbcff;
+			border-color: #6bbcff;
+		}
+	}
+
+	&.blue{
+		border-color: #2e4a74;
+		color: #2e4a74;
+		padding: 20px 40px;
+
+		&:hover{
+			color: #4a87c4;
+			border-color: #4a87c4;
+		}
+	}
+}
+/*--------------------------------------------------
+-- BUTTONS
+-----------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------
+-- OWL CAROUSEL
+-------------------------------------------------------*/
+.owl-carousel .owl-item{
+	height: 200px;
+}
+.owl-carousel .owl-item img{
+	width: unset;
+}
+/*-----------------------------------------------------
+-- OWL CAROUSEL
+------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------
+-- MODAL MENU
+-----------------------------------------------------------*/
+body.is-reveal-open{
+	overflow: visible;
+}
+.reveal.without-overlay{
+	top: 0 !important;
+}
+html.is-reveal-open,
+html.is-reveal-open body {
+    min-height: unset;
+    overflow: unset;
+    position: unset;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+#modal-menu{
+	outline: none;
+	background-color: #2e4a74;
+	background-repeat: no-repeat;
+	background-position: 100% center;
+	background-size: 300px;
+
+	h4 a{
+		font-family: "merriweather-regular";
+		color: #FFF;
+
+		&:hover{
+			text-decoration:  underline;
+		}		
+	}
+	ul li a{
+		font-family: "merriweather-regular";
+		color: #87b5dc;
+
+		&:hover{
+			text-decoration:  underline;
+		}
+	}
+}
+/*----------------------------------------------------------
+-- MODAL MENU
+-----------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------
+-- SEARCH MODAL
+-----------------------------------------------------*/
+#modal-search{
+	z-index: 2222;
+	background-color: #3784c4;
+
+	input{
+		height: 60px;
+	}
+
+	h2{
+		font-family: "opensans-bold";
+		color:white;
+	}
+
+	.close-button{
+		background-image: url("./images/icons/icon-close.png");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 40%;
+		background-color: #f15a29;
+		height: 80px;
+		width: 80px;
+		border-radius: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+/*-----------------------------------------------------
+-- SEARCH MODAL
+-----------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------
+-- TOP BAR
+------------------------------------------------------*/
+#top-bar .top-bar{
+	background-color: white;
+}
+
+#fake-burger-btn{
+	outline: none;
+	border-radius: 0;
+	background-color: #ffde17;
+	padding: 20px 20px;
+	transition: background-color 0.5s;
+	height: 80px;
+	width: 80px; 
+}
+
+#burger-btn{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1111;
+	outline: none;
+	border-radius: 0;
+	background-color: #ffde17;
+	padding: 20px 20px;
+	transition: background-color 0.5s;
+	height: 80px;
+	width: 80px; 
+
+	&.is-active{
+		z-index: 9999;
+		background-color: #f15a29;
+		color: #FFF;
+
+		.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+			background-color: #FFF;
+		}
+	}
+
+	.hamburger-box{
+		margin-bottom: 5px;
+	}
+
+	.text{
+		font-size:0.8em; 
+		font-family: "opensans-bold";
+	}
+}
+
+
+
+#search-btn{
+	background-image: url("./images/icons/icon-search.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 80px;
+	width: 80px;
+	border-radius: 0;
+	background-size: 40%;
+	background-color: #3784c4;
+}
+
+
+
+.icon-search{
+	background-image: url("./images/icons/icon-search.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 60px;
+	width: 60px;
+	border-radius: 0;
+	background-size: 60%;
+	background-color: #3784c4;
+}
+
+
+
+.febs-container{
+	padding: 0 80px;
+	@media print, screen and (max-width: 64em) {
+		&{
+			padding: unset;
+		}
+	}		
+
+	&.no-collapse{
+		padding: 0 80px !important;
+	}
+}
+/*-------------------------------------------------------
+-- TOP BAR
+------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------
+-- HELPERS
+--------------------------------------------------*/
+.v-aligner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*-------------------------------------------------
+-- HELPERS
+--------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------
+-- SLICK
+-------------------------------------------------------*/
+.slick-dots{
+	position: relative;
+	bottom: -10px;
+	text-align: left;
+	text-indent: 1rem;
+	z-index: 1;
+}
+
+.news-dots-container{
+	height: 0;
+
+	.slick-dots li.slick-active button:before{
+		color: white;
+	}
+
+	.slick-dots li button:before{
+		font-size: 10px;
+	}
+}
+
+.slick-dotted.slick-slider{
+	margin-bottom: unset;
+}
+
+.slick-slide{
+	outline: none;
+}
+
+
+// SHOW ONLY THE FIRST ONE
+.slick-init-1:not(.slick-initialized) > :nth-child(n+2),
+.slick-init-2:not(.slick-initialized) > :nth-child(n+3),
+.slick-init-3:not(.slick-initialized) > :nth-child(n+4) {
+  display: none;
+}
+/*---------------------------------------------------------
+-- SLICK
+-------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------
+-- ANIMATIONS
+------------------------------------------------------------------*/
+.up-down {
+    -webkit-animation: MoveUpDown 3s ease-out infinite;
+    animation: MoveUpDown 3s ease-out infinite;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto
+}
+
+@-webkit-keyframes MoveUpDown {
+    0% {
+        bottom: -10px
+    }
+    50% {
+        bottom: 10px
+    }
+    100% {
+        bottom: -10px
+    }
+}
+
+@keyframes MoveUpDown {
+    0% {
+        bottom: -10px
+    }
+    50% {
+        bottom: 10px
+    }
+    100% {
+        bottom: -10px
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------
+-- ABOUT PAGE  -  MISSION
+---------------------------------*/
+
+#mission-page{
+	#partners{
+		background-color: #FFF;
+	}
+	.page-title-container{
+		background-color: #2e4a74;
+		padding: 1.5rem 1.7rem;
+		padding-right: 5rem;
+		font-family: "merriweather-regular";
+		font-size: 1.8em;
+		color: white; 
+		width: 284px;
+
+		@media print, screen and (max-width: 64em) {
+			width: 100%;
+		}
+	}
+
+	.breadcrumb-container{
+		font-family: "merriweather-regular";
+		color: #AAA;
+		font-size: 0.8em;
+		padding: 2.2rem 1rem;
+
+		.active{
+			color: #2e4a74;
+			margin: 0 10px;
+		}
+
+		a{
+			color: #939598;
+			margin: 0 10px;
+		}
+	}
+
+	.main-content-container{
+		font-size: 0.9em;
+		background-color: #FFF;
+		padding: 4rem 6rem;
+		color: #2e4a74;
+
+		@media print, screen and (max-width: 64em) {
+			padding: 2rem 2rem;
+		}
+
+		h1{
+			font-family: "merriweather-regular";
+			margin: 0;
+		}
+		& > p{
+			font-family: "merriweather-light";
+			padding: 4rem 0;
+
+			@media print, screen and (max-width: 64em) {
+				padding: 2rem 0;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------
+-- ABOUT PAGE  -  EXECUTIVE-BOARD
+---------------------------------*/
+
+#executive-board-page{
+
+	#partners{
+		background-color: #FFF;
+	}
+	.page-title-container{
+		background-color: #2e4a74;
+		padding: 1.5rem 1.7rem;
+		padding-right: 5rem;
+		font-family: "merriweather-regular";
+		font-size: 1.8em;
+		color: white; 
+		width: 284px;
+
+		@media print, screen and (max-width: 64em) {
+			width: 100%;
+		}		
+	}
+
+	.breadcrumb-container{
+		font-family: "merriweather-regular";
+		color: #AAA;
+		font-size: 0.8em;
+		padding: 2.2rem 1rem;
+
+		.active{
+			color: #2e4a74;
+			margin: 0 10px;
+		}
+
+		a{
+			color: #939598;
+			margin: 0 10px;
+		}
+	}
+
+	.main-content-container{
+		font-size: 0.9em;
+		background-color: #FFF;
+		padding: 4rem 6rem;
+		color: #2e4a74;
+		min-height: 70vh;
+		background-position: 120% center;
+		background-repeat: no-repeat;
+		background-size: 400px;
+
+		@media print, screen and (max-width: 40em) {
+			background-position: 180% center;
+		}
+
+		@media print, screen and (max-width: 64em) {
+			padding: 2rem 2rem;
+		}
+
+		h1{
+			font-family: "merriweather-regular";
+			margin: 0;
+		}
+		& > p{
+			font-family: "merriweather-light";
+			padding: 4rem 0;
+
+			@media print, screen and (max-width: 64em) {
+				padding: 2rem 0;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------
+-- CONTACT PAGE
+---------------------------------*/
+
+#contact-page{
+	background-color: #2e4a74;
+
+	.febs-container{
+		@media print, screen and (max-width: 64em) {
+			margin-bottom: 0 !important;
+		}
+	}
+
+	hr{
+	    background-color: yellow;
+	    border-color: yellow;
+	    width: 38px;
+	    text-align: left;
+	    height: 3px;		
+	    float:left;
+	}
+
+	.contact-img-container{
+		padding: 2rem;
+		text-align: right;
+		background-position: center;
+		background-size: cover;
+
+		hr{
+			border-color:#2e4a74;
+			background-color:#2e4a74;
+			float:right;
+			margin-top: 0;
+		}
+		.text{
+			font-family: "merriweather-regular";
+		}
+		@media print, screen and (max-width: 64em) {
+			min-height: 400px;
+		}
+	}
+
+
+	#partners{
+		background-color: #FFF;
+	}
+	.page-title-container{
+		background-color: #3784c4;
+		padding: 1.5rem 1.7rem;
+		padding-right: 5rem;
+		font-family: "merriweather-regular";
+		font-size: 1.8em;
+		color: white; 
+		width: 284px;
+
+		@media print, screen and (max-width: 64em) {
+			width: 100%;
+		}		
+	}
+
+	.breadcrumb-container{
+		font-family: "merriweather-regular";
+		color: #AAA;
+		font-size: 0.8em;
+		padding: 2.2rem 1rem;
+
+		.active{
+			color: #FFF;
+			margin: 0 10px;
+		}
+
+		a{
+			color: #939598;
+			margin: 0 10px;
+		}
+	}
+
+	.main-content-container{
+		font-size: 0.9em;
+		background-color: #FFF;
+		color: #2e4a74;
+		padding: 4rem 4rem;
+		@media print, screen and (max-width: 90em) {
+			padding: 0;
+		}
+
+		.address{
+			background-color:#3784c4;
+			padding: 2rem;
+			background-position: 130% center;
+			background-size: 300px;
+			background-repeat: no-repeat;
+
+			h5{
+				font-family: "merriweather-regular";
+				color: white;
+			}
+			ul{
+				color:#EEE;
+				font-family: "opensans-regular";
+				font-size: 0.9em;
+			}
+			.info{
+				margin-bottom: 0;
+			}
+			.email{
+				font-family: "opensans-bold";
+				color: white;
+				margin-top: 1rem;
+				letter-spacing: 0.7px;
+				margin-bottom: 0;
+			}
+			.prof-info{
+				margin-bottom: 0;
+			}
+		}
+
+		@media print, screen and (max-width: 64em) {
+			padding: 0;
+		}
+
+		h1{
+			font-family: "merriweather-regular";
+			margin: 0;
+		}
+		& > p{
+			font-family: "merriweather-light";
+			padding: 4rem 0;
+
+			@media print, screen and (max-width: 64em) {
+				padding: 2rem 0;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------
+-- AWARDS PAGE
+---------------------------------*/
+
+#awards-page{
+	background-color: #2e4a74;
+
+	.febs-container{
+		@media print, screen and (max-width: 64em) {
+			margin-bottom: 0 !important;
+		}
+	}
+
+	hr{
+	    background-color: yellow;
+	    border-color: yellow;
+	    width: 38px;
+	    text-align: left;
+	    height: 3px;		
+	    float:left;
+	}
+
+	.contact-img-container{
+		padding: 2rem;
+		text-align: right;
+		background-position: center;
+		background-size: cover;
+
+		hr{
+			border-color:#2e4a74;
+			background-color:#2e4a74;
+			float:right;
+			margin-top: 0;
+		}
+		.text{
+			font-family: "merriweather-regular";
+		}
+		@media print, screen and (max-width: 64em) {
+			min-height: 400px;
+		}
+	}
+
+
+	#partners{
+		background-color: #FFF;
+	}
+	.page-title-container{
+		background-color: #3784c4;
+		padding: 1.5rem 1.7rem;
+		padding-right: 5rem;
+		font-family: "merriweather-regular";
+		font-size: 1.8em;
+		color: white; 
+		min-width: 284px;
+
+		@media print, screen and (max-width: 64em) {
+			width: 100%;
+		}		
+	}
+
+	.breadcrumb-container{
+		font-family: "merriweather-regular";
+		color: #AAA;
+		font-size: 0.8em;
+		padding: 2.2rem 1rem;
+
+		.active{
+			color: #FFF;
+			margin: 0 10px;
+		}
+
+		a{
+			color: #939598;
+			margin: 0 10px;
+		}
+	}
+
+	.main-content-container{
+		font-size: 0.9em;
+		background-color: #FFF;
+		color: #2e4a74;
+		padding: 4rem 4rem;
+		background-repeat: no-repeat;
+		background-position: -200px 300px;
+		@media print, screen and (max-width: 64em) {
+			padding: 3rem 2rem;
+		}
+
+		h1{
+			font-family: "merriweather-regular";
+			color: #2e4a74;
+			font-size: 2.2em;
+			margin-bottom: 3rem;
+		}
+		h2{
+			font-family: "opensans-regular";
+			color: #3784c4;
+			font-size: 2em;
+			margin-bottom: 3rem;
+		}
+		h3{
+			font-family: "opensans-bold";
+			color: #2e4a74;
+			font-size: 1.3em;
+			margin-bottom: 1rem;
+		}
+		ul{
+			margin-bottom: 3rem;
+			li{
+				margin-bottom: 15px;
+				font-family: "opensans-regular";
+				color: #586e90;
+			}
+			b{
+				font-family: "opensans-bold";
+				color: #3784c4;
+			}
+		}
+
+		
+	}
+
+	.footer{
+		font-size: 0.8em;
+		text-align: justify; 
+		font-family: "merriweather-regular";
+		letter-spacing: 1px;
+		font-weight: 100;
+		padding: 1rem 1.8rem 2rem;
+		position: absolute;
+		bottom: -50px;
+		left: -50px;
+
+		hr{
+			background-color: #2e4a74;
+			color: #2e4a74;
+			height: 4px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------
+-- MEDIA GALLERY PAGE
+---------------------------------*/
+
+#media-gallery-page{
+	background-color: #2e4a74;
+
+	.febs-container{
+		@media print, screen and (max-width: 64em) {
+			margin-bottom: 0 !important;
+		}
+	}
+
+	hr{
+	    background-color: #2e4a74;
+	    border-color: #2e4a74;
+	    width: 38px;
+	    text-align: left;
+	    height: 4px;		
+	    float:left;
+	}
+
+	.contact-img-container{
+		padding: 2rem;
+		text-align: right;
+		background-position: center;
+		background-size: cover;
+
+		hr{
+			border-color:#2e4a74;
+			background-color:#2e4a74;
+			float:right;
+			margin-top: 0;
+		}
+		.text{
+			font-family: "merriweather-regular";
+		}
+		@media print, screen and (max-width: 64em) {
+			min-height: 400px;
+		}
+	}
+
+
+	#partners{
+		background-color: #FFF;
+	}
+	.page-title-container{
+		background-color: #3784c4;
+		padding: 1.5rem 1.7rem;
+		font-family: "merriweather-regular";
+		font-size: 1.8em;
+		color: white; 
+		width: 300px;
+
+		@media print, screen and (max-width: 64em) {
+			width: 100%;
+		}		
+	}
+
+	.breadcrumb-container{
+		font-family: "merriweather-regular";
+		color: #AAA;
+		font-size: 0.8em;
+		padding: 2.2rem 1rem;
+
+		.active{
+			color: #FFF;
+			margin: 0 10px;
+		}
+
+		a{
+			color: #939598;
+			margin: 0 10px;
+		}
+	}
+
+	.main-content-container{
+		font-size: 0.9em;
+		background-color: #FFF;
+		color: #2e4a74;
+		padding: 0 4rem;
+		background-repeat: no-repeat;
+		background-position: 80% 160%;
+		@media print, screen and (max-width: 64em) {
+			padding: 3rem 2rem;
+			padding-bottom: 0;
+		}
+	}
+
+
+	.footer{
+		background-repeat: no-repeat;
+		height: 300px;
+		position: relative;
+
+		.stamp{
+			position: absolute;
+			bottom: 40px;
+			font-family: "merriweather-regular";
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------
+-- PUBLICATIONS LIST PAGE
+---------------------------------*/
+
+#publications-list-page{
+	background-color: #2e4a74;
+
+	.febs-container{
+		@media print, screen and (max-width: 64em) {
+			margin-bottom: 0 !important;
+		}
+	}
+
+	hr{
+	    background-color: yellow;
+	    border-color: yellow;
+	    width: 38px;
+	    text-align: left;
+	    height: 3px;		
+	    float:left;
+	}
+
+	.publication-img-container{
+		text-align: right;
+		background-position: center;
+		background-size: cover;
+		background-color: #2e4a74;
+		justify-content:flex-end;
+		min-height: 400px;
+		position: relative;
+		@media print, screen and (max-width: 64em) {
+			// min-height: 400px;
+			justify-content:center;
+		}
+
+		img{
+			max-width: 600px;
+			max-height: 450px;
+		}
+
+		a{
+			display: block;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+		}
+	}
+
+	.signature{
+		padding: 2rem;
+		text-align: right;
+		background-position: center;
+		background-size: cover;
+
+		hr{
+			border-color:#2e4a74;
+			background-color:#2e4a74;
+			float:right;
+			margin-top: 0;
+		}
+		.text{
+			font-family: "merriweather-regular";
+		}
+	}
+
+	#partners{
+		background-color: #FFF;
+	}
+	.page-title-container{
+		background-color: #3784c4;
+		padding: 1.5rem 1.7rem;
+		padding-right: 5rem;
+		font-family: "merriweather-regular";
+		font-size: 1.8em;
+		color: white; 
+		width: 284px;
+
+		@media print, screen and (max-width: 64em) {
+			width: 100%;
+		}		
+	}
+
+	.breadcrumb-container{
+		font-family: "merriweather-regular";
+		color: #AAA;
+		font-size: 0.8em;
+		padding: 2.2rem 1rem;
+
+		.active{
+			color: #FFF;
+			margin: 0 10px;
+		}
+
+		a{
+			color: #939598;
+			margin: 0 10px;
+		}
+	}
+
+	.main-content-container{
+		font-size: 0.9em;
+		background-color: #FFF;
+		color: #2e4a74;
+		padding: 4rem 4rem;
+		background-repeat: no-repeat;
+		background-size: 300px;
+		background-position: 55% 110%;
+
+		@media print, screen and (max-width: 90em) {
+			padding: 0;
+		}
+
+		.publication{
+			padding-bottom: 1rem;
+			background-color: #FFF;
+
+			@media print, screen and (max-width: 90em) {
+				background-color: #3784c4;
+				padding-bottom: 5px;
+			}			
+			@media print, screen and (max-width: 64em) {
+				background-color: #2e4a74;
+				margin-bottom: 1rem;
+				padding-bottom: 3rem;
+			}	
+		}
+
+		.info{
+			background-color:#2e4a74;
+			padding: 3rem;
+			background-position: 130% center;
+			background-size: 300px;
+			background-repeat: no-repeat;
+
+			.title{
+				color: white;
+				font-family: "merriweather-regular";
+				font-size: 1.8em;
+				padding-top: 1rem;
+				a{
+					color: white;
+				}
+			}
+			small{
+				font-family: "opensans-semibold";
+				color: white;
+				display: block;
+				padding: 1rem 0;
+			}
+			.excerpt{
+				font-family: "opensans-regular";
+				font-size: 0.8em;
+				color: #DDD;
+				text-align: justify;
+			}
+
+			h5{
+				font-family: "merriweather-regular";
+				color: white;
+			}
+			ul{
+				color:#EEE;
+				font-family: "opensans-regular";
+				font-size: 0.9em;
+			}
+
+		}
+
+		@media print, screen and (max-width: 64em) {
+			padding: 0;
+		}
+
+		h1{
+			font-family: "merriweather-regular";
+			margin: 0;
+		}
+		& > p{
+			font-family: "merriweather-light";
+			padding: 4rem 0;
+
+			@media print, screen and (max-width: 64em) {
+				padding: 2rem 0;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------
+-- PUBLICATION PAGE
+---------------------------------*/
+
+#publication-page{
+	background-color: #edeff1;
+
+	.febs-container{
+		@media print, screen and (max-width: 64em) {
+			margin-bottom: 0 !important;
+		}
+	}
+
+	.back-to-publications-btn{
+		text-align: left;
+		padding-left: 4rem;
+		font-family: "merriweather-bold";
+		font-size: 0.9em;
+
+		p{
+			width: 100%;
+			text-align: left;
+			margin-bottom: 0;
+
+			img{
+				margin-right: 1rem;
+				margin-bottom: 3px;
+			}
+
+			a{
+				color: #2e4a74;
+			}
+		}
+	}
+
+	hr{
+	    background-color: yellow;
+	    border-color: yellow;
+	    width: 38px;
+	    text-align: left;
+	    height: 3px;		
+	    float:left;
+	}
+
+	.signature{
+		padding: 2rem;
+		text-align: right;
+		background-position: center;
+		background-size: cover;
+
+		hr{
+			border-color:#2e4a74;
+			background-color:#2e4a74;
+			float:right;
+			margin-top: 0;
+		}
+		.text{
+			font-family: "merriweather-regular";
+		}
+	}
+
+	#partners{
+		background-color: #FFF;
+	}
+	.page-title-container{
+		background-color: #2e4a74;
+		padding: 1.5rem 1.7rem;
+		padding-right: 5rem;
+		font-family: "merriweather-regular";
+		font-size: 1.8em;
+		color: white; 
+		width: 284px;
+
+		@media print, screen and (max-width: 64em) {
+			width: 100% !important;
+		}		
+	}
+
+	.breadcrumb-container{
+		font-family: "merriweather-regular";
+		color: #AAA;
+		font-size: 0.8em;
+		padding: 2.2rem 1rem;
+
+		.active{
+			color: #2e4a74;
+			margin: 0 10px;
+		}
+
+		a{
+			color: #939598;
+			margin: 0 10px;
+		}
+	}
+
+	.main-content-container{
+		font-size: 0.9em;
+		background-color: #FFF;
+		color: #2e4a74;
+		padding: 4rem 4rem;
+		background-repeat: no-repeat;
+		background-size: 300px;
+		background-position: 55% 110%;
+
+		.guest-editors-section{
+			h4{
+				margin-top: 4rem;
+				color: #3784c4;
+				font-family: "merriweather-bold";
+				font-size: 1.6em;
+			}
+		}
+
+		hr{
+			background-color: #3784c4;
+			border-color: #3784c4;
+		}
+
+		.title{
+			font-size: 2.2em;
+			font-family: "merriweather-bold";
+		}
+
+		.subtitle{
+			font-family: "merriweather-bold";
+			color: #3784c4;
+			font-size: 2em;
+		}
+
+		.badge{
+			border-radius: 0;
+			background-color: #3784c4;
+			font-family: "opensans-semibold";
+			padding: 5px;
+			font-size: 0.8em;
+			margin-top: 15px;
+		}
+
+		.thumbnail-section{
+			margin-top: 3rem;
+			.img{
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				min-height: 300px;
+				@media print, screen and (min-width: 64em) {
+					max-width: 40%;
+				}
+			}
+			.txt{
+				background-color: #3784c4;
+				padding: 3rem;
+				color: #FFF;
+				font-family: "opensans-regular";
+
+				@media print, screen and (max-width: 40em) {
+					padding: 2rem;
+				}
+			}
+		}
+
+		.main-text{
+			margin-top: 3rem;
+			h4{
+				color: #3784c4;
+				font-family: "merriweather-bold";
+				font-size: 1.6em;
+			}
+			p{
+				color: #586e90;
+				font-family: "merriweather-light";
+			}
+		}
+
+		@media print, screen and (max-width: 64em) {
+			padding: 2rem;
+		}
+
+		h1{
+			font-family: "merriweather-regular";
+			margin: 0;
+		}
+		& > p{
+			font-family: "merriweather-light";
+			padding: 4rem 0;
+
+			@media print, screen and (max-width: 64em) {
+				padding: 2rem 0;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------
+-- NEWS PAGE
+---------------------------------*/
+
+#news-page{
+	#partners{
+		background-color: #FFF;
+	}
+	.page-title-container{
+		background-color: #2e4a74;
+		padding: 1.5rem 1.7rem;
+		font-family: "merriweather-regular";
+		font-size: 1.6em;
+		color: white; 
+		width: 284px;
+
+		@media print, screen and (max-width: 64em) {
+			width: 100%;
+		}
+	}
+
+	.breadcrumb-container{
+		font-family: "merriweather-regular";
+		color: #AAA;
+		font-size: 0.8em;
+		padding: 2.2rem 1rem;
+
+		.active{
+			color: #2e4a74;
+			margin: 0 10px;
+		}
+
+		a{
+			color: #939598;
+			margin: 0 10px;
+		}
+	}
+
+	.main-content-container{
+		font-size: 0.9em;
+		background-color: #FFF;
+		padding: 3rem;
+		color: #2e4a74;
+
+		@media print, screen and (max-width: 64em) {
+			padding: 2rem 2rem;
+		}
+
+		h1{
+			font-family: "merriweather-regular";
+			margin: 0;
+			font-size: 2.2em;
+			margin-bottom: 2rem;
+		}
+		& > p{
+			font-family: "merriweather-light";
+			padding: 4rem 0;
+
+			@media print, screen and (max-width: 64em) {
+				padding: 2rem 0;
+			}
+		}
+
+		#latest-announcements{
+			.title-container{
+				background-color: #3784c4;
+				padding: 1rem 2rem;
+				h3{
+					font-family: "merriweather-light";
+					color: #ffde17;
+					font-size: 1.6em;
+					margin: 0;
+				}
+			}
+		}
+
+		.card{
+			// border:none;
+			border-top: none;
+			border-radius: 0;
+			margin-bottom: 0;
+			border-width: 0.5px;
+			
+			.card-thumbnail{
+				width: 100%;
+				height: 250px;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+			}
+			.card-section{
+				border: 1px rgba(0,0,0,0.4);
+				padding: 10px 25px;
+				.date{
+					font-family: "opensans-semibold";
+					color: #2e4a74;
+					font-size: 1.2em;
+					font-style: normal;
+					span{
+						font-family: "opensans-bold";
+						color: #3784c4;
+						font-size: 1.6em;
+						font-style: normal;
+					}
+				}
+				.text{
+					color: #2e4a74;
+					font-family: "opensans-semibold";
+					padding-bottom: 2rem;
+					line-height: 20px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------
+-- NEWS ITEM PAGE
+---------------------------------*/
+
+#news-item-page{
+	background-color: #2e4a74;
+
+	.febs-container{
+		@media print, screen and (max-width: 64em) {
+			margin-bottom: 0 !important;
+		}
+	}
+
+	hr{
+	    background-color: yellow;
+	    border-color: yellow;
+	    width: 38px;
+	    text-align: left;
+	    height: 3px;		
+	    float:left;
+	}
+
+	.contact-img-container{
+		padding: 2rem;
+		text-align: right;
+		background-position: center;
+		background-size: cover;
+
+		hr{
+			border-color:#2e4a74;
+			background-color:#2e4a74;
+			float:right;
+			margin-top: 0;
+		}
+		.text{
+			font-family: "merriweather-regular";
+		}
+		@media print, screen and (max-width: 64em) {
+			min-height: 400px;
+		}
+	}
+
+
+	#partners{
+		background-color: #FFF;
+	}
+	.page-title-container{
+		background-color: #3784c4;
+		padding: 1.5rem 1.7rem;
+		padding-right: 5rem;
+		font-family: "merriweather-regular";
+		font-size: 1.8em;
+		color: white; 
+		min-width: 284px;
+
+		@media print, screen and (max-width: 64em) {
+			width: 100%;
+		}		
+	}
+
+	.breadcrumb-container{
+		font-family: "merriweather-regular";
+		color: #AAA;
+		font-size: 0.8em;
+		padding: 2.2rem 1rem;
+
+		.active{
+			color: #FFF;
+			margin: 0 10px;
+		}
+
+		a{
+			color: #939598;
+			margin: 0 10px;
+		}
+	}
+
+	.main-content-container{
+		font-size: 0.9em;
+		background-color: #FFF;
+		color: #2e4a74;
+		padding: 4rem 4rem;
+		background-repeat: no-repeat;
+		background-position: -200px 300px;
+		@media print, screen and (max-width: 64em) {
+			padding: 3rem 2rem;
+		}
+
+		p{
+			color: #2e4a74;
+			font-family: "merriweather-regular";
+		}
+
+		h1{
+			font-family: "merriweather-regular";
+			color: #2e4a74;
+			font-size: 2.2em;
+			margin-bottom: 3rem;
+		}
+		h2{
+			font-family: "opensans-regular";
+			color: #3784c4;
+			font-size: 2em;
+			margin-bottom: 3rem;
+		}
+		h3{
+			font-family: "opensans-bold";
+			color: #2e4a74;
+			font-size: 1.3em;
+			margin-bottom: 1rem;
+		}
+		ul{
+			margin-bottom: 3rem;
+			li{
+				margin-bottom: 15px;
+				font-family: "opensans-regular";
+				color: #586e90;
+			}
+			b{
+				font-family: "opensans-bold";
+				color: #3784c4;
+			}
+		}
+
+		
+	}
+
+	.footer{
+		font-size: 0.8em;
+		text-align: justify; 
+		font-family: "merriweather-regular";
+		letter-spacing: 1px;
+		font-weight: 100;
+		padding: 1rem 1.8rem 2rem;
+		position: absolute;
+		bottom: -50px;
+		left: -50px;
+
+		hr{
+			background-color: #2e4a74;
+			color: #2e4a74;
+			height: 4px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------
+-- SIDE MENU CONTAINER
+-----------------------*/
+
+.side-menu-container{
+	font-family: "merriweather-light";
+	background-color: #3784c4;
+	padding: 0;
+	color: white;
+	font-size: 1em;
+	position: relative;
+	padding-bottom: 200px;
+
+	@media print, screen and (min-width: 64em) {
+		width: 284px !important;
+	}
+
+	@media print, screen and (max-width: 64em) {
+		padding-bottom: 0rem;
+	}
+
+	ul{
+		margin-left:0;
+	}
+
+	ul li{
+		letter-spacing: 1px;
+
+		&.active{
+			background-color:#3b92cc;
+		}
+
+		a{
+			font-size: 0.9em;
+			padding: 1rem 1.8rem;
+			display: block;
+			color: white;
+			transition: background-color 0.2s;
+			&:hover{
+				background-color: #3b92cc;
+			}
+		}
+	} 
+
+	.footer{
+		font-size: 0.8em;
+		text-align: justify; 
+		font-family: "merriweather-light";
+		letter-spacing: 1px;
+		font-weight: 100;
+		padding: 1rem 1.8rem 2rem;
+		position: absolute;
+		bottom: 0;
+	}
+
+	hr{
+	    background-color: yellow;
+	    border-color: yellow;
+	    width: 31px;
+	    text-align: left;
+	    height: 3px;		
+	    float:left;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------
+-- PUBLICATION SIDE MENU
+------------------------------*/
+
+.publication-side-menu-container{
+	font-family: "merriweather-light";
+	background-color: #2e4a74;
+	padding: 0;
+	color: white;
+	font-size: 1em;
+	position: relative;
+	padding-bottom: 200px;
+
+	@media print, screen and (min-width: 64em) {
+		width: 284px !important;
+	}
+
+	@media print, screen and (max-width: 64em) {
+		padding-bottom: 0rem;
+	}
+
+	.menu.nested{
+		margin: 0;
+		padding: 0;
+	}
+
+	.vertical.nested li.active{
+		background-color: #3784c4;
+	}
+
+	ul{
+		margin-left:0;
+	}
+
+	ul li{
+		letter-spacing: 1px;
+
+		&.publication-title{
+			background-color: #3784c4;
+			padding: 1.5rem 1.7rem;
+		    padding-right: 5rem;
+		    font-size: 0.8em;
+		    font-family: "merriweather-regular";
+		    font-size: 1.8em;				
+		}
+		&.active{
+			background-color:#415c82;
+		}
+
+		a{
+			padding: 1rem 1.8rem !important;
+			display: block;
+			color: white;
+			transition: background-color 0.2s;
+			font-size: 0.8em;
+			&:hover{
+				background-color: #415c82;
+			}
+		}
+
+		&.buy-publication-container{
+			margin-left: 1rem;
+			margin-top: 3rem;
+			background-color: #233857;
+			width: 200px;
+			padding: 10px;
+
+			img{
+				width: 200px;
+			}
+		}
+
+		&.buy-publication-btn{
+			margin-left: 1rem;
+			margin-top: 1rem;
+			width: 200px;
+
+			button{
+				width: 200px;
+			}
+		}
+	} 
+
+	.footer{
+		font-size: 0.8em;
+		text-align: justify; 
+		font-family: "merriweather-light";
+		letter-spacing: 1px;
+		font-weight: 100;
+		padding: 1rem 1.8rem 2rem;
+		position: absolute;
+		bottom: 0;
+	}
+
+	hr{
+	    background-color: yellow;
+	    border-color: yellow;
+	    width: 31px;
+	    text-align: left;
+	    height: 3px;		
+	    float:left;
+	}
+}
+
+
+
+/*---------------------------
+-- FEBS CARDS
+---------------------------*/
+.febs-card{
+	.img{
+		margin-right: 33px;
+		border-radius: 100%;
+		box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+		width: 100px;
+		height: 100px;
+		background-position: center center;
+		background-size: 110%;
+		background-repeat: no-repeat;
+
+		@media print, screen and (max-width: 40em) {
+			margin-right: 0;
+			margin:auto;
+			margin-bottom: 1rem;
+		}
+
+	}
+	h6{
+		font-family: "merriweather-regular";
+		color: #3784c4;
+		font-size: 1.1em;
+		padding-bottom: 5px;
+		@media print, screen and (max-width: 40em) {
+			text-align:center
+		}			
+	}
+	small{
+		font-family: "merriweather-regular";
+		font-size: 0.9em;
+		font-weight: bold;
+		@media print, screen and (max-width: 40em) {
+			margin:auto;
+		}				
+	}
+	p{
+		font-family: "merriweather-light";
+		font-size: 0.9em;
+		margin: 0; 
+		@media print, screen and (max-width: 40em) {
+			text-align:center
+		}				
+	}
+
+	&.vertical-card{
+		@media print, screen and (max-width: 1550px) {
+			.img{
+				margin-right: 0;
+				margin:auto;
+				margin-bottom: 1rem;
+			}
+			h6{
+				text-align:center
+			}
+			small{
+				margin:auto;
+			}
+			p{
+				text-align:center
+			}
+			.content{
+				text-align: center;
+				width: 90%;
+				margin:auto;
+			}
+
+		}
+	}
+}
+
+
+
+
+
+/*------------------------
+-- ACCORDION  Side Bar
+--------------------------*/
+.accordion{
+	margin-bottom: 0;
+
+	.accordion-title{
+		background-color: #3b92cc;
+		border: none;
+		border-bottom: none;
+		&:hover{
+			background-color: #3b92cc;
+		}
+		p{
+			float:left;
+			margin: 0;
+		}
+		#burger-btn-2{
+			float: right;
+			pointer-events:none;
+			color: #FFF;
+
+			.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+				background-color: #FFF;
+			}
+		}
+	}
+	.accordion-content{
+		background-color: #317aab;
+	}
+}
+:last-child:not(.is-active) > .accordion-title{
+	border-bottom: none;
+	border-radius: 0;
+}
+.accordion-item:first-child > :first-child{
+	border-radius: 0;
+}
+.accordion-content{
+	border:none;
+}
+.accordion-title::before{
+	content: unset;
+}
+.is-active > .accordion-title::before{
+	content: unset;
+}
+:last-child > .accordion-content:last-child{
+	border-bottom: none;
+}
+
+
+
+
+
+
+
+
+/*-------------------
+-- ACCORDION
+------------------*/
+
+	.accordion.custom{
+		background-color: rgba(0,0,0,0);
+
+		.accordion-item.is-active{
+			.img{
+				background-image: url('./images/accordion-open.png');
+			}
+		}
+		.accordion-title{
+			background-color: rgba(0,0,0,0);
+			margin: 50px 0px;
+			padding: 0;
+			b{
+				font-family: "opensans-bold";
+				color: #2e4a74;
+				font-size: 1.5em;
+				margin: 0 0.5rem; 
+			}
+
+			.img{
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: left center;
+				padding: 12px;
+				background-image: url('./images/accordion-closed.png');
+				max-width: 1500px;
+			}
+		}	
+		.accordion-content{
+			background-color: rgba(0,0,0,0);
+			padding: 0;
+
+			img{
+				padding: 1rem;
+				@media print, screen and (max-width: 40em) {
+					margin: auto;
+				}
+			}
+			.title{
+				color: #2e4a74;
+				font-family: "opensans-semibold";
+				font-size: 1.2em;
+				margin-bottom: 0;
+				margin-left: 8px;
+			}
+			.date{
+				font-family: "opensans-regular";
+				font-style: italic;
+				color: #3784c4;
+				margin-bottom: 2rem;
+				margin-left: 8px;
+			}
+			.button{
+				margin: 1rem;
+				padding: 0.8rem 2rem;
+				background-color: #ffde17;
+				color: #2e4a74;
+				@media print, screen and (max-width: 64em) {
+					width: 100%;
+					margin: 1rem 0;
+				}
+			}
+		}
+
+		.accordion-title:hover{
+			background-color: rgba(0,0,0,0);
+		}
+	}
+
+
+
+
+	hr.thin{
+	    background-color: #3784c4;
+	    border-color: #3784c4;
+	    width: 45px;
+	    text-align: left;
+	    height: 1px;		
+	    float:left;
+	    margin-left: 1.5rem;
+	    margin-bottom: 1rem;
+
+	    @media print, screen and (max-width: 40em) {
+	    	margin: auto;
+	    }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*----------------
+	-- NOTES
+	----------------*/
+
+	/* 
+	a {
+	color unset
+	}
+
+	*background properties
+
+	*/
