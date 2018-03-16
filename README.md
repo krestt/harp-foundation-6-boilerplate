@@ -8,17 +8,17 @@
 <table width="100%">
 	<tr>
 		<td>
-			<a href="https://nodejs.org/en/">
+			<a href="https://nodejs.org/en/" target="_blank">
 			<img src="https://www.netgains.org/wp-content/uploads/2014/01/node_js.png" width="230" title="Node JS Logo">
 			</a>
 		</td>
 		<td>
-			<a href="http://harpjs.com/">
+			<a href="http://harpjs.com/" target="_blank">
 			<img src="http://sintaxi.com/assets/img/harp-banner.svg" width="256" title="Harp JS Logo">
 			</a>
 		</td>
 		<td>
-			<a href="https://foundation.zurb.com/sites/docs/xy-grid.html">
+			<a href="https://foundation.zurb.com/sites/docs/xy-grid.html" target="_blank">
 			<img src="https://foundation.zurb.com/assets/img/learn/features/svgs/code-reduction-01.svg" width="256" title="Zurb Foundation Logo">
 			</a>
 		</td>
