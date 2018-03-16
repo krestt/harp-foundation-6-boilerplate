@@ -26,7 +26,7 @@
 
 - This boilerplate contains a nice and well organized folder structure 
 - Contains a nice set of plugins for different uses. E.g. Image sliders... 
-- A README.html file contains some notes of some other usefull plugins for your website. (Links included) 
+- A README.html file contains some notes of some other usefull plugins that could be usefull. (Links included) 
 
 ***
 
