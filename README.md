@@ -12,3 +12,19 @@
 		<td><img src="https://foundation.zurb.com/assets/img/learn/features/svgs/code-reduction-01.svg" width="256" title="Zurb Foundation Logo"></td>
 	</tr>
 </table>
+
+
+[![License][license-image]][license-url]
+
+
+***
+
+## 1. Getting Started
+
+#### 1.1. Installation
+
+The simplest method is to copy paste this snippet just before your closing `</body>` tag.
+
+```html
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+```
