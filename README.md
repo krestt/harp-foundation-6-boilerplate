@@ -8,17 +8,17 @@
 <table width="100%">
 	<tr>
 		<td>
-			<a href="https://nodejs.org/en/" target="_blank">
+			<a href="https://nodejs.org/en/">
 			<img src="https://www.netgains.org/wp-content/uploads/2014/01/node_js.png" width="230" title="Node JS Logo">
 			</a>
 		</td>
 		<td>
-			<a href="http://harpjs.com/" target="_blank">
+			<a href="http://harpjs.com/">
 			<img src="http://sintaxi.com/assets/img/harp-banner.svg" width="256" title="Harp JS Logo">
 			</a>
 		</td>
 		<td>
-			<a href="https://foundation.zurb.com/sites/docs/xy-grid.html" target="_blank">
+			<a href="https://foundation.zurb.com/sites/docs/xy-grid.html">
 			<img src="https://foundation.zurb.com/assets/img/learn/features/svgs/code-reduction-01.svg" width="256" title="Zurb Foundation Logo">
 			</a>
 		</td>
@@ -37,8 +37,6 @@
 
 #### 1.1. Installation
 
-The simplest method is to copy paste this snippet just before your closing `</body>` tag.
-
-```html
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-```
+- [Install NodeJS](https://nodejs.org/en/)
+- `npm install scrollreveal`
+- `bower install scrollreveal`
