@@ -1,7 +1,7 @@
 # harp-foundation-6-boilerplate
 
 
-### Harp with Foundation 6 Boilerplate — Nice boilerplate with Grid-XY system
+### HarpJS Foundation 6 Boilerplate — Nice boilerplate for Harp JS with Grid-XY system
 
 <table width="100%">
 	<tr>
@@ -23,6 +23,10 @@
 	</tr>
 </table>
 
+
+- This boilerplate contains a nice and well organized folder structure 
+- Contains a nice set of plugins for different uses. E.g. Image sliders... 
+- A README.html file contains some notes of some other usefull plugins for your website. (Links included) 
 
 ***
 
