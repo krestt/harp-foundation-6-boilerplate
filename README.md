@@ -38,5 +38,5 @@
 #### 1.1. Installation
 
 - [Install NodeJS](https://nodejs.org/en/)
-- `npm install scrollreveal`
-- `bower install scrollreveal`
+- [Install HarpJS](http://harpjs.com/)
+- And you are ready to ROCK!!
