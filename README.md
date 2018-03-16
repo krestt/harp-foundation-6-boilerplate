@@ -2,7 +2,7 @@
 
 
 ### HarpJS Foundation 6 Boilerplate — Nice boilerplate for Harp JS with Grid-XY system
-#### UNDER DEVELOPMENT! Do not use yet.
+## UNDER DEVELOPMENT! Do not use yet.
 
 <table width="100%">
 	<tr>
