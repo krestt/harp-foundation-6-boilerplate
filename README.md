@@ -5,4 +5,4 @@
 
 [![test](https://foundation.zurb.com/assets/img/learn/features/svgs/code-reduction-01.svg | width=300)](https://foundation.zurb.com/sites/docs/xy-grid.html)
 
-[![ScrollReveal Demo](https://scrollrevealjs.org/assets/scrollreveal-demo.png =100)](https://scrollrevealjs.org)
+[![ScrollReveal Demo](https://scrollrevealjs.org/assets/scrollreveal-demo.png)](https://scrollrevealjs.org)
